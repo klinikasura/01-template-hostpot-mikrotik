@@ -25,17 +25,19 @@ font-family: verdana;
 font-size: 11px;
 }
 
-body{ color: #737373; font-size: 12px; font-family: verdana; }
+body{
+	color: #737373;
+	font-size: 12px;
+	font-family: verdana;
+	background-image: url(TEMA.gif);
+}
 
 a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 12px; }
 a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
 img {border: none;}
 td { font-size: 12px; padding: 4px;}
-.style1 {
-	font-size: 18px;
-	color: #666666;
-}
 .style2 {color: #666666}
+.style3 {color: #FFFFFF}
 
 -->
 </style>
@@ -58,37 +60,36 @@ td { font-size: 12px; padding: 4px;}
 <tr>
 <td align="center" valign="middle">
   <h1 class="style2"><b><img src="logo.jpg" width="86" height="90"></b></h1>
-  <h1>RS. ASURA TUGUMULYO </h1>
-  <div class="container">
+  <h1 class="style3">RS. ASURA TUGUMULYO </h1>
+  <div class="container style3">
     <div class="col-sm-4 col-sm-offset-4">
       <center>
         <h4>Aplikasi Ini Dikembangkan Oleh IT Managemen Desain Hamba Alloh</h4>
         </center>
     </div>
   </div>
-  <p class="style2"><strong>LOGOUT</strong><br>
+  <p class="style3"><strong>LOGOUT</strong><br>
   </p>
   <table border="1" class="tabula">  
-<tr><td align="right" class="style2">User Name</td><td class="style2">$(username)</td></tr>
-<tr><td align="right" class="style2">IP Address</td><td class="style2">$(ip)</td></tr>
-<tr><td align="right" class="style2">MAC Address</td><td class="style2">$(mac)</td></tr>
-<tr><td align="right" class="style2">Session Time</td><td class="style2">$(uptime)</td></tr>
+<tr><td align="right" class="style3">User Name</td><td class="style3">$(username)</td></tr>
+<tr><td align="right" class="style3">IP Address</td><td class="style3">$(ip)</td></tr>
+<tr><td align="right" class="style3">MAC Address</td><td class="style3">$(mac)</td></tr>
+<tr><td align="right" class="style3">Session Time</td><td class="style3">$(uptime)</td></tr>
 $(if session-time-left)
-<tr><td align="right" class="style2">Time Left</td><td class="style2">$(session-time-left)</td></tr>
+<tr><td align="right" class="style3">Time Left</td><td class="style3">$(session-time-left)</td></tr>
 $(endif)
-<tr><td align="right" class="style2">Bytes UP/DOWN:</td><td class="style2">$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+<tr><td align="right" class="style3">Bytes UP/DOWN:</td><td class="style3">$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
 </table>
-  <span class="style2"><br>
+  <span class="style3"><br>
   </span>
   <form action="$(link-login)" name="login" class="style2" onSubmit="return openLogin()">
-    <p>
+    <p class="style3">
       <input type="submit" value="log in">
     </p>
-    <p>RS. ASURA</p>
-    <p>Aplikasi Versi 6.0</p>
+    <p class="style3">RS. ASURA</p>
+    <p class="style3">Aplikasi Versi 6.0</p>
     <p>&nbsp;  </p>
-  </form>
-</td>
+  </form></td>
 </table>
 </body>
 </html>

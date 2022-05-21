@@ -22,7 +22,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
 <!--
 body {
-	background-image: url(PROFILE.gif);
+	background-image: url(TEMA.gif);
 	background-color: #999999;
 }
 .style2 {color: #FFFFFF}
@@ -52,14 +52,11 @@ body {
 </style></head>
 <body class='login'>
 $(if chap-id)
-	<form name="sendin" action="$(link-login-only)" method="post">
-		<input type="hidden" name="username" />
-		<input type="hidden" name="password" />
-		<input type="hidden" name="dst" value="$(link-orig)" />
-		<input type="hidden" name="popup" value="true" />
-	</form>
-	
-	<script type="text/javascript" src="/md5.js"></script>
+  <input type="hidden" name="username" />
+  <input type="hidden" name="password" />
+  <input type="hidden" name="dst" value="$(link-orig)" />
+  <input type="hidden" name="popup" value="true" />
+<script type="text/javascript" src="/md5.js"></script>
 	<script type="text/javascript">
 	<!--
 	    function doLogin() {
